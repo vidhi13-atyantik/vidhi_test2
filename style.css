@@ -1,0 +1,142 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.flip-card {
+    width: 20%;
+    background: white;
+    color: black;
+    border: 2px solid #e6e6e6;
+    position: relative;
+    min-height: 540px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+ 
+  
+  .flip-card-back {
+    background: #333;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .card-title{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 25px 0px;
+}
+.card-title img{
+    height: 100% !important;
+}
+.card-title h4{
+    font-size: 21px;
+    line-height: 29px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0px !important;
+    min-height: 65px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.card-img{
+    margin: 3em 0;
+}
+.car-price{
+    margin-bottom: 1em;
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 17px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0px 25px 0px;
+}
+.spec-list{
+    min-height: 140px;
+    padding: 0px 25px;
+}
+.spec-list p{
+    font-size: 12.5px;
+    line-height: 18.63px;
+    margin-bottom: 1rem;
+    margin-top: 0px !important;
+}
+.spec-list li{
+    font-size: 0.8rem;
+}
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.card-button{
+    margin: 0px auto;
+    width: 87%;
+}
+.card-img img{
+    width: 95%;
+}
+.card-button a{
+    color: #fefefe;
+    background-color: #333;
+    border-color: #333;
+    box-shadow: inset 0 1px 0 rgb(254 254 254 / 15%), 0 1px 1px rgb(10 10 10 / 8%);
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    display: inline-block;
+    width: 94%;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.375rem;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 0;
+    margin: 18.4px 0px;
+    letter-spacing: 0.8px;
+    text-decoration: none !important;
+    transition: all 0.5s ease-in-out;
+}
+.card-button a:hover{
+    color: #fefefe;
+    background-color: #202020;
+    border-color: #1a1a1a;
+}
+.trim-spec {
+    text-align: left;
+    margin: 20px 0px;
+    padding: 0px 25px;
+}
+.trim-header{
+    font-size: 19.4px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.trim-value{
+    font-size: 18px;
+}
